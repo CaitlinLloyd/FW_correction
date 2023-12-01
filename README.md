@@ -10,9 +10,9 @@ If you are running docker on an M1 mac, you can also use:
 docker pull drlloydpi/fw_correct:latest
 
 Then to run, you will use the following command
-docker run -v $local_path_to_data:/data sha256:0892a3b85c1ddc30bdc92f3e8033b07d586887a43425d ./main.sh /data/$path_to_dwi /data/$path_to_bval /data/$path_to_bvec /data/$path_to_mask ../data/fw_out
+docker run -v $local_path_to_data:/data drlloydpi/fw_correct_arm ./main.sh /data/$path_to_dwi /data/$path_to_bval /data/$path_to_bvec /data/$path_to_mask ../data/fw_out
 
 or
 
-singularity run -v $local_path_to_data:/data sha256:0892a3b85c1ddc30bdc92f3e8033b07d586887a43425d ./main.sh /data/$path_to_dwi /data/$path_to_bval /data/$path_to_bvec /data/$path_to_mask ../data/fw_out
+singularity run -v $local_path_to_data:/data fw_correct ./main.sh /data/$path_to_dwi /data/$path_to_bval /data/$path_to_bvec /data/$path_to_mask ../data/fw_out
 
