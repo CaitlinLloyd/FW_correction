@@ -1,6 +1,6 @@
 # FW_correction: Remove freewater from diffusion-weighted imaging (dwi) data
 
-The collection of files here includes everything needed to run freewater correction on dwi data (single shell).
+The collection of files here includes everything needed to run freewater correction on dwi data (single shell) using the method developed by Parker and colleagues (original repository here: https://github.com/DiCIPHR-Lab/Fernet). Some minor updates have been made to the filenames, to prevent issues running the scripts. The files have also been packaged into a Docker container, allowing you to run the correction steps within a single script, relatively easily.
 
 With docker or singularity installed, you can run the following:
 
