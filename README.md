@@ -1,10 +1,12 @@
 # FW_correction: Remove freewater from diffusion-weighted imaging (dwi) data
 
 The collection of files here includes everything needed to run freewater correction on dwi data (single shell).
+
 With docker or singularity installed, you can run the following:
 
-docker pull drlloydpi/fw_correct_arm
-singularity pull pull fw_correct.sif docker://drlloydpi/fw_correct_arm
+docker pull drlloydpi/fw_correct_arm (for docker)
+
+singularity pull pull fw_correct.sif docker://drlloydpi/fw_correct_arm (for singularity)
 
 If you are running docker on an M1 mac, you can also use:
 docker pull drlloydpi/fw_correct:latest
